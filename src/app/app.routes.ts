@@ -20,10 +20,8 @@ export const routes: Routes = [
   },
   {
     path: 'javascript',
-    loadComponent: () =>
-      import('../javascript/javascript.component').then(
-        (r) => r.JavascriptComponent
-      ),
+    loadChildren: () =>
+      import('../javascript/javascript.routes').then((r) => r.javaScriptRout),
   },
   {
     path: 'angular',
