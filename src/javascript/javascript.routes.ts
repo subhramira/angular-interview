@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { CallbackfunctionComponent } from './callbackfunction/callbackfunction.component';
 import { HigherorderFunctionComponent } from './higherorder-function/higherorder-function.component';
+import { ImportantConceptComponent } from './Important_concepts/important_concepts.component';
 import { JavascriptIndexComponent } from './javascript-index/javascript-index.component';
-import { PromiseComponent } from './promise/promise.component';
 
 export const javaScriptRout: Routes = [
   {
@@ -11,7 +11,7 @@ export const javaScriptRout: Routes = [
     children: [
       { path: 'higherorder', component: HigherorderFunctionComponent },
       { path: 'callback', component: CallbackfunctionComponent },
-      { path: 'promise', component: PromiseComponent },
+      { path: 'importantconcept', component: ImportantConceptComponent },
     ],
   },
 ];
